@@ -23,7 +23,7 @@ public class Weather {
     private String summary;
     private String icon;
     private double humidity;
-    private float precipProbability;
+    private double precipProbability;
     private double temperature;
     private String precipType;
 
@@ -61,7 +61,7 @@ public class Weather {
         this.humidity = humidity;
     }
 
-    public float getPrecipProbability() {
+    public double getPrecipProbability() {
         return precipProbability;
     }
 
@@ -69,7 +69,7 @@ public class Weather {
         return (int)(this.precipProbability * 100);
     }
 
-    public void setPrecipProbability(float precipProbability) {
+    public void setPrecipProbability(double precipProbability) {
         this.precipProbability = precipProbability;
     }
 

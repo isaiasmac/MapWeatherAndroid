@@ -61,6 +61,7 @@ public class WeatherService {
         weather.setIcon(currentlyJSON.getString(AppKeys.ICON));
         weather.setTemperature(currentlyJSON.getDouble(AppKeys.TEMPERATURE));
         weather.setHumidity(currentlyJSON.getDouble(AppKeys.HUMIDITY));
+        weather.setPrecipProbability(currentlyJSON.getDouble(AppKeys.PRECIP_PROBABILITY));
         if (currentlyJSON.has(AppKeys.PRECIP_TYPE)) {
             if (!currentlyJSON.isNull(AppKeys.PRECIP_TYPE)) {
                 weather.setPrecipType(currentlyJSON.getString(AppKeys.PRECIP_TYPE));
